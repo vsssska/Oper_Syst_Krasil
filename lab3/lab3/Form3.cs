@@ -20,13 +20,27 @@ namespace lab3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Text = Class1.SourceFile;
+            textBox1.Focus();
+            textBox1.Select(0, textBox1.TextLength);
             if (textBox1.Text != null)
             {
                 Class1.NewName = textBox1.Text;
                 textBox1.Text = null;
-                string exten = Path.GetExtension(Class1.SourceFile);
-                Class1.NewName = string.Concat(Path.GetPathRoot(Class1.SourceFile), String.Concat(Class1.NewName, exten));
-                File.Move(Class1.SourceFile, Class1.NewName);
+                if(File.Exists(Class1.SourceFile))
+                {
+                    string exten = Path.GetExtension(Class1.SourceFile);
+                    Class1.NewName = string.Concat(Path.GetDirectoryName(Class1.SourceFile), @"\", String.Concat(Class1.NewName, exten));
+                    File.Move(Class1.SourceFile, Class1.NewName);
+                }
+                else if(Directory.Exists(Class1.SourceFile))
+                {
+                    Class1.NewName = string.Concat(Path.GetDirectoryName(Class1.SourceFile), @"\", Class1.NewName);
+                    Directory.Move(Class1.SourceFile, Class1.NewName);
+                }    
+                
+                
+                
                 Close();
             }
         }

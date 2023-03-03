@@ -55,10 +55,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(43, 12);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 75);
+            this.textBox1.Size = new System.Drawing.Size(359, 140);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Файл с таким названием уже существует, хотите его перезаписать?";
             // 
