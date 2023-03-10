@@ -206,7 +206,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(192, 27);
             this.button7.TabIndex = 18;
-            this.button7.Text = "button7";
+            this.button7.Text = "Изменить приоритет";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -216,7 +216,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(192, 27);
             this.button8.TabIndex = 19;
-            this.button8.Text = "button8";
+            this.button8.Text = "Изменить приоритет";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
