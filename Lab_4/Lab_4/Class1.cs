@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Lab_4
@@ -14,6 +15,6 @@ namespace Lab_4
         public int counter;
         public int number;
         public bool threadPause;
-        public ThreadPriorityLevel priority;
+        public ThreadPriority priority;
     }
 }
