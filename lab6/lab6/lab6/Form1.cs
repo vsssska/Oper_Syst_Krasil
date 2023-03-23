@@ -160,17 +160,12 @@ namespace lab6
                 GetWinSize(winInf.hwnd);
 
                 textBox1.Text = GetWindowText(winInf.hwnd);
-                ScreenCheker();
+
+
             }
             
         }
 
-        private void ScreenCheker()
-        {
-            Size resolution = Screen.PrimaryScreen.Bounds.Size;
-            Console.WriteLine("Width: {0}, Height: {1}", resolution.Width, resolution.Height);
-
-        }
 
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
@@ -188,6 +183,7 @@ namespace lab6
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
+            
             if (e.Button == MouseButtons.Left)
             {
                 POINT cursorpos = GetCursorPosition();
@@ -198,7 +194,6 @@ namespace lab6
                 MoveWindow(winInf.hwnd, x, y, winInf.width, winInf.height, true);
                 GetWinSize(winInf.hwnd);
             }
-            
         }
 
         private void hScrollBar2_ValueChanged(object sender, EventArgs e)
@@ -208,5 +203,6 @@ namespace lab6
             Console.WriteLine("ScrollBarValue" + hScrollBar2.Value + "height= " + height + "width= " + width);
             MoveWindow(winInf.hwnd, winInf.x, winInf.y, width, height, true);
         }
+
     }
 }

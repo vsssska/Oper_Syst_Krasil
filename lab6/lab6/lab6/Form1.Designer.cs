@@ -37,7 +37,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBoxInf = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,15 +126,6 @@
             this.hScrollBar2.Value = 1;
             this.hScrollBar2.ValueChanged += new System.EventHandler(this.hScrollBar2_ValueChanged);
             // 
-            // listBox2
-            // 
-            this.listBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(590, 51);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(266, 485);
-            this.listBox2.TabIndex = 9;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -205,12 +196,22 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Изменить расположение";
             // 
+            // textBoxInf
+            // 
+            this.textBoxInf.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBoxInf.Location = new System.Drawing.Point(604, 51);
+            this.textBoxInf.Multiline = true;
+            this.textBoxInf.Name = "textBoxInf";
+            this.textBoxInf.Size = new System.Drawing.Size(248, 485);
+            this.textBoxInf.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(864, 548);
+            this.Controls.Add(this.textBoxInf);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -218,7 +219,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.hScrollBar2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
@@ -247,7 +247,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.HScrollBar hScrollBar2;
-        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -255,6 +254,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxInf;
     }
 }
 
