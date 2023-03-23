@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
 
 namespace lab6
 {
@@ -28,20 +30,62 @@ namespace lab6
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool IsWindowVisible(IntPtr hWnd);
+
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
         [DllImport("user32.dll", SetLastError = true)]
         static extern int SetWindowText(IntPtr hWnd, string text);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr GetWindowSize(IntPtr hWnd);
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr SetWindowSize(IntPtr hWnd, int width, int height);
+
+
         public Form1()
         {
             InitializeComponent();
-            Timer timer = new Timer();
-            
         }
 
+        System.Timers.Timer timer1;
+        public delegate void InvokeDelegate();
+        public string selitem;
+
+        private void filler()
+        {
+            listBox1.Items.Clear();
+            EnumWindows((hWnd, lParam) => {
+                if (IsWindowVisible(hWnd) && GetWindowTextLength(hWnd) != 0)
+                {
+                    listBox1.Items.Add(GetWindowText(hWnd));
+                }
+                return true;
+            }, IntPtr.Zero);
+        }
+        private void EventFill(object sender, EventArgs e)
+        {
+            listBox1.BeginInvoke(new InvokeDelegate(filler));
+        }
+
+        private void EventText(object sender, EventArgs e)
+        {
+            IntPtr hWnd = FindWindow(null, selitem);
+            SetWindowText(hWnd, textBox1.Text);
+            selitem = GetWindowText(hWnd);
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            timer1 = new System.Timers.Timer();
 
+            listBox1.Items.Clear();
+
+            timer1.Interval= 1000;
+
+            timer1.Elapsed += EventFill;
+            timer1.Elapsed += EventText;
+
+            timer1.Start();
         }
 
         string GetWindowText(IntPtr hWnd)
@@ -52,24 +96,11 @@ namespace lab6
             return sb.ToString(0, len);
         }
 
-        private void btnSearch_Click_1(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-            EnumWindows((hWnd, lParam) => {
-                if (IsWindowVisible(hWnd) && GetWindowTextLength(hWnd) != 0)
-                {
-                    listBox1.Items.Add(GetWindowText(hWnd));
-                }
-                return true;
-            }, IntPtr.Zero);
-            
-        }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            selitem = listBox1.SelectedItem.ToString();
             IntPtr hWnd = FindWindow(null, listBox1.SelectedItem.ToString());
             textBox1.Text = GetWindowText(hWnd);
-            SetWindowText(hWnd, "asdasdasd");
         }
     }
 }

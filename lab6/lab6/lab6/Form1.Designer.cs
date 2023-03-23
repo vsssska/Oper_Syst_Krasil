@@ -32,7 +32,6 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
@@ -68,22 +67,11 @@
             this.trackBar2.Size = new System.Drawing.Size(267, 45);
             this.trackBar2.TabIndex = 3;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(388, 91);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "button1";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 298);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.trackBar2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.trackBar1);
@@ -104,7 +92,6 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.Button btnSearch;
     }
 }
 
