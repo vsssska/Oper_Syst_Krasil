@@ -60,6 +60,7 @@ namespace lab6
 
         System.Timers.Timer timer1;
         System.Timers.Timer timer2;
+
         public delegate void InvokeDelegate();
         public string selitem;
 
@@ -86,7 +87,7 @@ namespace lab6
             selitem = GetWindowText(hWnd);
         }
 
-        int scale = 1;
+
         private void EventScale(object sender, EventArgs e)
         {
         }
@@ -127,6 +128,7 @@ namespace lab6
                 selitem = listBox1.SelectedItem.ToString();
                 IntPtr hWnd = FindWindow(null, listBox1.SelectedItem.ToString());
                 textBox1.Text = GetWindowText(hWnd);
+
             }
             catch 
             { 
