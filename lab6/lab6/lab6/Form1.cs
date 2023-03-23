@@ -140,20 +140,24 @@ namespace lab6
 
         }
 
+
+        private void GetWinSize(IntPtr hWnd)
+        {
+            RECT rc = new RECT();
+            GetWindowRect(winInf.hwnd, ref rc);
+
+            winInf.width = rc.Right - rc.Left;
+            winInf.height = rc.Bottom - rc.Top;
+            winInf.x = rc.Left;
+            winInf.y = rc.Top;
+        }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex != -1)
             {
                 
                 winInf.hwnd = FindWindow(null, listBox1.SelectedItem.ToString());
-
-                RECT rc = new RECT();
-                GetWindowRect(winInf.hwnd, ref rc);
-
-                winInf.width = rc.Right - rc.Left;
-                winInf.height = rc.Bottom - rc.Top;
-                winInf.x = rc.Left;
-                winInf.y = rc.Top;
+                GetWinSize(winInf.hwnd);
 
                 textBox1.Text = GetWindowText(winInf.hwnd);
                 ScreenCheker();
@@ -172,25 +176,29 @@ namespace lab6
         {
             textBox2.Text = hScrollBar1.Value.ToString();
             MoveWindow(winInf.hwnd, hScrollBar1.Value, winInf.y, winInf.width, winInf.height, true);
+            GetWinSize(winInf.hwnd);
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
             textBox3.Text = vScrollBar1.Value.ToString();
             MoveWindow(winInf.hwnd, winInf.x, vScrollBar1.Value, winInf.width, winInf.height, true);
+            GetWinSize(winInf.hwnd);
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if(e.Button== MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 POINT cursorpos = GetCursorPosition();
                 Point df = pictureBox1.PointToClient(MousePosition);
-                int x = df.X*10;
-                int y = df.Y*10;
-                
+                int x = df.X * 10;
+                int y = df.Y * 10;
+
                 MoveWindow(winInf.hwnd, x, y, winInf.width, winInf.height, true);
+                GetWinSize(winInf.hwnd);
             }
+            
         }
 
         private void hScrollBar2_ValueChanged(object sender, EventArgs e)
