@@ -105,7 +105,7 @@
             this.folderSelecter.Name = "folderSelecter";
             this.folderSelecter.Size = new System.Drawing.Size(144, 23);
             this.folderSelecter.TabIndex = 6;
-            this.folderSelecter.Text = "Выбрать файл";
+            this.folderSelecter.Text = "Выбрать папку";
             this.folderSelecter.UseVisualStyleBackColor = true;
             this.folderSelecter.Click += new System.EventHandler(this.folderSelecter_Click);
             // 
@@ -123,6 +123,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

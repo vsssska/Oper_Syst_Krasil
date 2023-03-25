@@ -160,6 +160,7 @@ namespace lab6
                 GetWinSize(winInf.hwnd);
 
                 textBox1.Text = GetWindowText(winInf.hwnd);
+                textBoxInf.Text = "Window size: " + winInf.width + "x" + winInf.height + Environment.NewLine + "Window position: (" +  winInf.x + ";" + winInf.y + ")" + Environment.NewLine;
 
 
             }
@@ -203,6 +204,5 @@ namespace lab6
             Console.WriteLine("ScrollBarValue" + hScrollBar2.Value + "height= " + height + "width= " + width);
             MoveWindow(winInf.hwnd, winInf.x, winInf.y, width, height, true);
         }
-
     }
 }

@@ -50,9 +50,10 @@ namespace KontrolnayaRabota
         /*async void CopyDirectoryEvent(string sourceDir)
         {
             var dir = new DirectoryInfo(sourceDir);
-            string destinationDir = string.Concat(Path.)
+            string destinationDir = string.Concat(sourceDir)
             for(int i =1; i <= copCount; i++)
             {
+                destinationDir = string.Concata(destinationDir, i);
                 if (!dir.Exists)
                     throw new DirectoryNotFoundException($"Source directory not found: {dir.FullName}");
 
@@ -90,12 +91,12 @@ namespace KontrolnayaRabota
                     CopyFileEvent(sourcefile);
                     button1.Visible = false;
                 }
-                else if (Directory.Exists(sourcefile))
+                /*else if (Directory.Exists(sourcefile))
                 {
                     copCount = Convert.ToInt32(textBox1);
                     CopyDirectoryEvent(sourcefile);
                     button1.Visible = false;
-                }
+                }*/
                 
             }
             
@@ -130,6 +131,12 @@ namespace KontrolnayaRabota
                     sourcefile = fbd.SelectedPath;
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = "1";
+            folderSelecter.Visible = false;
         }
     }
 }
