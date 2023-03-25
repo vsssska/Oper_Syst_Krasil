@@ -9,3 +9,14 @@ D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab6\lab6\lab6\obj\Debug\lab6.csproj.
 D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab6\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
 D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab6\lab6\lab6\obj\Debug\lab6.exe
 D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab6\lab6\lab6\obj\Debug\lab6.pdb
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\bin\Debug\lab6.exe.config
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\bin\Debug\lab6.exe
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\bin\Debug\lab6.pdb
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.csproj.AssemblyReference.cache
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.Form1.resources
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.Properties.Resources.resources
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.csproj.GenerateResource.cache
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.exe
+D:\VisualStudioRepo\Oper_syst_kras\lab6\lab6\lab6\obj\Debug\lab6.pdb
