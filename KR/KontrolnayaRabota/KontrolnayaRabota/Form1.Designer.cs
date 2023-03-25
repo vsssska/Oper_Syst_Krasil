@@ -35,8 +35,6 @@
             this.filepath = new System.Windows.Forms.TextBox();
             this.readcopyCount = new System.Windows.Forms.Label();
             this.writePathName = new System.Windows.Forms.Label();
-            this.folderSelecter = new System.Windows.Forms.Button();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // textBox1
@@ -99,22 +97,11 @@
             this.writePathName.TabIndex = 5;
             this.writePathName.Text = "Путь копируемого файла:";
             // 
-            // folderSelecter
-            // 
-            this.folderSelecter.Location = new System.Drawing.Point(209, 75);
-            this.folderSelecter.Name = "folderSelecter";
-            this.folderSelecter.Size = new System.Drawing.Size(144, 23);
-            this.folderSelecter.TabIndex = 6;
-            this.folderSelecter.Text = "Выбрать папку";
-            this.folderSelecter.UseVisualStyleBackColor = true;
-            this.folderSelecter.Click += new System.EventHandler(this.folderSelecter_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 323);
-            this.Controls.Add(this.folderSelecter);
             this.Controls.Add(this.writePathName);
             this.Controls.Add(this.readcopyCount);
             this.Controls.Add(this.filepath);
@@ -138,8 +125,6 @@
         private System.Windows.Forms.TextBox filepath;
         private System.Windows.Forms.Label readcopyCount;
         private System.Windows.Forms.Label writePathName;
-        private System.Windows.Forms.Button folderSelecter;
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 

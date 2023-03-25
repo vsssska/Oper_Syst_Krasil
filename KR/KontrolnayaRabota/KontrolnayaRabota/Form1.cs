@@ -47,38 +47,6 @@ namespace KontrolnayaRabota
             
         }
 
-        /*async void CopyDirectoryEvent(string sourceDir)
-        {
-            var dir = new DirectoryInfo(sourceDir);
-            string destinationDir = string.Concat(sourceDir)
-            for(int i =1; i <= copCount; i++)
-            {
-                destinationDir = string.Concata(destinationDir, i);
-                if (!dir.Exists)
-                    throw new DirectoryNotFoundException($"Source directory not found: {dir.FullName}");
-
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                Directory.CreateDirectory(destinationDir);
-
-                foreach (FileInfo file in dir.GetFiles())
-                {
-                    string targetFilePath = Path.Combine(destinationDir, file.Name);
-                    file.CopyTo(targetFilePath);
-                }
-
-                if (recursive)
-                {
-                    foreach (DirectoryInfo subDir in dirs)
-                    {
-                        string newDestinationDir = Path.Combine(destinationDir, subDir.Name);
-                        CopyDirectory(subDir.FullName, newDestinationDir, true);
-                    }
-                }
-            }
-            
-        }*/
-
-
 
         string sourcefile;
         private void button1_Click(object sender, EventArgs e)
@@ -91,12 +59,6 @@ namespace KontrolnayaRabota
                     CopyFileEvent(sourcefile);
                     button1.Visible = false;
                 }
-                /*else if (Directory.Exists(sourcefile))
-                {
-                    copCount = Convert.ToInt32(textBox1);
-                    CopyDirectoryEvent(sourcefile);
-                    button1.Visible = false;
-                }*/
                 
             }
             
@@ -122,21 +84,9 @@ namespace KontrolnayaRabota
             }
         }
 
-        private void folderSelecter_Click(object sender, EventArgs e)
-        {
-            using(FolderBrowserDialog fbd = new FolderBrowserDialog())
-            {
-                if(fbd.ShowDialog() == DialogResult.OK)
-                {
-                    sourcefile = fbd.SelectedPath;
-                }
-            }
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             textBox1.Text = "1";
-            folderSelecter.Visible = false;
         }
     }
 }
