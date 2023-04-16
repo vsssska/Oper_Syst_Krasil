@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "WAsVvlInIQkxaKOUZJBDhlKPeBhIuEkqmDN0W/SXXhMGQHTtWVbafW38hVn/cRnG0HJCFxMi6tOhKz+pTTv1ug==",
@@ -5,4 +6,13 @@
   "projectFilePath": "D:\\VisualStudioRepos\\Labs\\Oper_Syst_Krasil\\lab7\\lab7\\lab7\\lab7.csproj",
   "expectedPackageFiles": [],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "WAsVvlInIQkxaKOUZJBDhlKPeBhIuEkqmDN0W/SXXhMGQHTtWVbafW38hVn/cRnG0HJCFxMi6tOhKz+pTTv1ug==",
+  "success": true,
+  "projectFilePath": "D:\\VisualStudioRepos\\Labs\\Oper_Syst_Krasil\\lab7\\lab7\\lab7\\lab7.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> 6cf045d1ffb005712723aa4054b441865808ce0e
 }

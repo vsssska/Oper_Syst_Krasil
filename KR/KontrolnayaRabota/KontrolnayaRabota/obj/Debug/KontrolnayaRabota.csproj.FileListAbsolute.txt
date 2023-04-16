@@ -1,0 +1,11 @@
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\bin\Debug\KontrolnayaRabota.exe.config
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\bin\Debug\KontrolnayaRabota.exe
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\bin\Debug\KontrolnayaRabota.pdb
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.csproj.AssemblyReference.cache
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.Form1.resources
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.Properties.Resources.resources
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.csproj.GenerateResource.cache
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.csproj.CoreCompileInputs.cache
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.exe
+D:\VisualStudioRepo\Oper_syst_kras\KR\KontrolnayaRabota\KontrolnayaRabota\obj\Debug\KontrolnayaRabota.pdb

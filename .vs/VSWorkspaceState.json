@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\lab7",
     "\\lab7\\lab7",
     "\\lab7\\lab7\\lab7",
@@ -8,5 +9,13 @@
     "\\Lab_4\\Lab_4"
   ],
   "SelectedNode": "\\lab7\\lab7\\lab7\\Form1.cs",
+=======
+    "\\lab3\\lab3",
+    "\\lab6",
+    "\\lab6\\lab6",
+    "\\lab6\\lab6\\lab6"
+  ],
+  "SelectedNode": "\\lab6\\lab6\\lab6\\Form1.cs",
+>>>>>>> 6cf045d1ffb005712723aa4054b441865808ce0e
   "PreviewInSolutionExplorer": false
 }

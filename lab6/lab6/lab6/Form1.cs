@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Security.Cryptography.X509Certificates;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics;
 
 namespace lab6
 {
@@ -74,6 +75,10 @@ namespace lab6
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int Width, int Height, bool Repaint);
+        
+        [DllImport("user32.dll")]
+        static extern IntPtr GetWindowThreadProcessId(IntPtr hWnd, out int nIndex);
+
 
         
 
@@ -160,7 +165,13 @@ namespace lab6
                 GetWinSize(winInf.hwnd);
 
                 textBox1.Text = GetWindowText(winInf.hwnd);
-
+                string a = "Window size: " + winInf.width + "x" + winInf.height + Environment.NewLine + "Window position: (" + winInf.x + ";" + winInf.y + ")" + Environment.NewLine;
+                
+                GetWindowThreadProcessId(winInf.hwnd, out int prid);
+                Process prc = Process.GetProcessById(prid);
+                string b = "Window Session ID: " + prc.SessionId.ToString() + Environment.NewLine;
+                string c = "Window priority: " + prc.BasePriority.ToString() + Environment.NewLine;
+                textBoxInf.Text = a + b + c;
 
             }
             
@@ -203,6 +214,5 @@ namespace lab6
             Console.WriteLine("ScrollBarValue" + hScrollBar2.Value + "height= " + height + "width= " + width);
             MoveWindow(winInf.hwnd, winInf.x, winInf.y, width, height, true);
         }
-
     }
 }
