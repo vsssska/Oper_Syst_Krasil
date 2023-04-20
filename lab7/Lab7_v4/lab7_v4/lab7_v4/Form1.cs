@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using System.Threading;
-using System.Diagnostics.Eventing.Reader;
 using System.Diagnostics;
 
 namespace lab7_v4
@@ -41,9 +32,6 @@ namespace lab7_v4
 
         private static int WH_KEYBOARD_LL = 13;
         private const int WM_KEYDOWN = 0x0100;
-        const int WM_KEYUP = 0x101;
-        const int VK_A = 0x41;
-        const int VK_B = 0x42;
         static string output;
         static string[] _chars = {"j", "o", "p", "a", " "};
         static int char_flag = 0;
@@ -55,7 +43,6 @@ namespace lab7_v4
                 return SetWindowsHookEx(ID, func, GetModuleHandle(curModule.ModuleName), 0);
         }
 
-        
         private static int KeyboardHookProc(int nCode, IntPtr wParam, IntPtr lParam)
         {
             if(nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
@@ -65,15 +52,10 @@ namespace lab7_v4
                 Console.WriteLine($"{output}\n");
 
                 UnhookWindowsHookEx(KHook);
-
-
-
                 SendKeys.SendWait(_chars[char_flag%5]);
                 char_flag++;
                 start_hook();
                 
-                
-
                 return 1;
 
             }
@@ -100,14 +82,24 @@ namespace lab7_v4
 
         }
 
+        bool hook_flag = true;
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            start_hook();
+            if (!hook_flag)
+            {
+                start_hook();
+                hook_flag= true;
+            }
+                
         }
 
         private void buttonStop_Click(object sender, EventArgs e)
         {
-            end_hook();
+            if (hook_flag)
+            {
+                end_hook();
+                hook_flag= false;
+            }
         }
     }
 }
