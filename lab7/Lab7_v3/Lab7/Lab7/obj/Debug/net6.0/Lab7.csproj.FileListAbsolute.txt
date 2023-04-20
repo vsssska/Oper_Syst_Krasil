@@ -1,0 +1,15 @@
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\bin\Debug\net6.0\Lab7.exe
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\bin\Debug\net6.0\Lab7.deps.json
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\bin\Debug\net6.0\Lab7.runtimeconfig.json
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\bin\Debug\net6.0\Lab7.dll
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\bin\Debug\net6.0\Lab7.pdb
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.csproj.AssemblyReference.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.AssemblyInfoInputs.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.AssemblyInfo.cs
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.csproj.CoreCompileInputs.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.dll
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\refint\Lab7.dll
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.pdb
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\Lab7.genruntimeconfig.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\Lab7\Lab7_v3\Lab7\Lab7\obj\Debug\net6.0\ref\Lab7.dll

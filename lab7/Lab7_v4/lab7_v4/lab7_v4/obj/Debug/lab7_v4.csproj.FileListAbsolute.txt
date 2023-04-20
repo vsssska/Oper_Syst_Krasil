@@ -1,0 +1,11 @@
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\bin\Debug\lab7_v4.exe.config
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\bin\Debug\lab7_v4.exe
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\bin\Debug\lab7_v4.pdb
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.csproj.AssemblyReference.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.Form1.resources
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.Properties.Resources.resources
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.csproj.GenerateResource.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.csproj.CoreCompileInputs.cache
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.exe
+D:\VisualStudioRepos\Labs\Oper_Syst_Krasil\lab7\Lab7_v4\lab7_v4\lab7_v4\obj\Debug\lab7_v4.pdb
